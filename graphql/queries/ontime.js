@@ -228,9 +228,12 @@ exports.queryType = new GraphQLObjectType({
   
             var limit = params.first;
             var offset = params.offset;
-            if (limit == null) {
+            if (limit == null) { 
               limit = 100;
             }
+            if (limit > 10000 {
+                limit = 10000; // so we don't run out of memory during the query
+                }
             var query = buildQuery(params)
 
             var performaces = AirlineModel.find(query).limit(limit).skip(offset).exec();
