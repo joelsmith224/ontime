@@ -54,7 +54,8 @@ Which will result in the following response:
 
 The API supports all of the headers from the on-time performace table as optional arguments except 
 for Diverted Airport Information headers (Div1 to Div4 headers). In addition it also takes an optional 
-first and/or offset integer argument. First returns the first 'x' rows found with the arguments provided.
+first and/or offset integer argument. First returns the first 'x' rows found with the arguments provided. 
+First will not return more than 10,000 sets of data and the default is 100 if not set.
 Offset will skip the 'offset amount' of rows before fetching data.
 
 ### Design Decisions and Review
@@ -66,5 +67,6 @@ database to my server as my Internet is quite slow where I live; The database in
 of January only.  
 The layout of the project here could probably be improved and refactored for easier readability and maintenance.
 I would also like to improve the structure of the grpahQL queries and schema's so that data that is related is stored in seperate types.
+One more thing I would improve on is that if the server cannot find the number of entries set in 'first' throws an error rather than the number of entries it did find.
 
 
