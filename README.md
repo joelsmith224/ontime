@@ -1,5 +1,5 @@
 # ontime
-On Time Performance of Aircraft in the US graphQL API
+## On Time Performance of Aircraft in the US graphQL API
 
 This is a graphQL API used to analyse the on-time arrival data for non-stop dosmestic flights in the USA. 
 The graphQL server is built using nodeJS and express, hosted on a GCP compute virtual machine. The data is stored on a mongoDB 
