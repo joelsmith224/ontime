@@ -231,7 +231,7 @@ exports.queryType = new GraphQLObjectType({
             if (limit == null) { 
               limit = 100;
             }
-            if (limit > 10000 {
+            if (limit > 10000) {
                 limit = 10000; // so we don't run out of memory during the query
                 }
             var query = buildQuery(params)
