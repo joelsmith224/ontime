@@ -118,7 +118,6 @@ var ontimeSchema = new Schema({
     collection: 'ontime'
 });
 
-
 var Model = mongoose.model('ontime', ontimeSchema);
 
 module.exports = Model;
