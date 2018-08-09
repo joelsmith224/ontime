@@ -11,6 +11,7 @@ The server hosted at the following address: http://104.197.80.50:8080/graphql
 
 An example request would be as follows:
 
+``` graphql
 {  
   onTimePerformace(  
     first: 1,  
@@ -29,9 +30,11 @@ An example request would be as follows:
       AIR_TIME  
   }  
 }  
+```
 
 Which will result in the following response:
 
+``` graphql
 {  
   "data": {  
     "onTimePerformace": [  
@@ -47,6 +50,7 @@ Which will result in the following response:
     ]  
   }  
 }  
+```
 
 The API supports all of the headers from the on-time performace table as optional arguments except 
 for Diverted Airport Information headers (Div1 to Div4 headers). In addition it also takes an optional 
