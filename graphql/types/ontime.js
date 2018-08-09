@@ -56,7 +56,7 @@ exports.onTimePerformaceType = new GraphQLObjectType({
         type: GraphQLString
       },
       ORIGIN_CITY_NAME: {
-        type: GraphQLInt
+        type: GraphQLString
       },
       ORIGIN_STATE_ABR: {
         type: GraphQLString
